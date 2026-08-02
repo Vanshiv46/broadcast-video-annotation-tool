@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.venv/
+
+# Backend runtime data - never commit downloaded videos or the DB
+backend/downloads/*
+!backend/downloads/.gitkeep
+backend/data/*.db
+backend/data/*.db-journal
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Env files (secrets)
+.env
+.env.local
+
+# OS/editor junk
+.DS_Store
+.vscode/
+*.log
